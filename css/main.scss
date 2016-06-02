@@ -1,0 +1,88 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//colours
+$theme-color: #D7BF9D;
+$theme-highlight: #D29945;
+$text-color: #3d3d3d;
+$theme-grey: #d8d8d8;
+
+//fonts
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/book.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/light.otf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/semibold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/bookitalic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/lightitalic.otf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/semibolditalic.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: DIN;
+  src: url('/assets/fonts/DIN/DINBek-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: DIN;
+  src: url('/assets/fonts/DIN/DIN-RegularItalic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+$heading-font: Sentinel;
+$body-font: DIN;
+$base-font-size: 1rem;
+$base-line-height: 1.4;
+
+//responsive
+$lg: 1024px;
+$md: 768px;
+$sm: 425px;
+
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "homepage",
+        "category",
+        "post",
+        "syntax-highlighting"
+;
