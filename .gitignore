@@ -52,3 +52,6 @@ fabric.properties
 
 # *.iml
 # modules.xml
+
+#jekyll
+_site
