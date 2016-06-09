@@ -64,7 +64,6 @@ $lg: 1024px;
 $md: 768px;
 $sm: 425px;
 
-
 // Using media queries with like this:
 // @include media-query($palm) {
 //     .wrapper {
@@ -83,6 +82,5 @@ $sm: 425px;
         "base",
         "homepage",
         "category",
-        "post",
-        "syntax-highlighting"
+        "post"
 ;
