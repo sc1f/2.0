@@ -4,8 +4,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
 }
 p, ul, li, a, span, pre {
+  color: $text-color;
   font-family: $body-font;
   line-height: $base-line-height;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  color: lightgray;
+}
+
+img {
+  height: auto;
+  width: 100%;
 }
 
 .btn {
@@ -19,30 +35,53 @@ p, ul, li, a, span, pre {
 //navbar
 
 .navbar {
-  border-bottom: 4px solid $theme-color;
+  /*border-bottom: 4px solid $theme-color;*/
 }
 a.navbar-brand {
-  color: $theme-highlight;
+  color: $theme-color;
   font-family: $heading-font;
   font-size: 2.75em !important;
   font-weight: 300;
   text-align: left;
   &:hover {
-    color: $theme-color;
+    color: darken($theme-color, 10%);
   }
 }
 .navbar-section > a.btn-link {
   font-size: 1.25em;
-  line-height: 1.5;
+  line-height: 0;
+  &:hover {
+    color: lighten($text-color, 50%);
+  }
+}
+
+.nav {
+  display: none;
 }
 
 //footer
 
 .footer {
-  border-top: 4px solid $theme-color;
+  /*border-top: 4px solid $theme-color;*/
   margin-bottom: 2em;
   .footer-links {
     text-align: center;
     width: 100%;
+  }
+  padding-top: 1em;
+}
+
+
+//responsive
+
+@include media-query($sm) {
+  .navbar {
+    flex-direction: column;
+  }
+  .col-8 {
+    width: 100%;
+  }
+  div.jumbotron-container {
+    padding: 0 1em;
   }
 }

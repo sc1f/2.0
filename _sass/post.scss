@@ -1,0 +1,38 @@
+.post.container {
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .col-9 {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: 1em;
+  }
+
+}
+
+.post-information {
+  background: #fff;
+  position: fixed;
+  width: 15%;
+}
+
+.post-content {
+  width: 85%;
+  padding: 0 1em 0 1em;
+}
+.post-title {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.post-created-for {
+  color: lighten($text-color, 30%);
+}

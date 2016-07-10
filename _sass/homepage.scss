@@ -19,7 +19,11 @@
 
 }
 .jumbotron-item {
-  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5ff4fe37894031.574fad24c28d2.jpg) no-repeat 0 0;
+  background: #fcfcfc;
+  border: 1px solid lightgray;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-background-size: cover;
   background-size: cover;
   margin: 0;
@@ -34,8 +38,37 @@
     float:left;
     padding-top:100%;
   }
+  &:hover {
+    background: darken(#fcfcfc, 10%);
+  }
 }
 
+/* nasty code but it works */
+
+#1 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+#2 {
+  animation-delay:.33s;
+  -webkit-animation-delay: .33s;
+}
+#3 {
+  animation-delay: .66s;
+  -webkit-animation-delay: .66s;
+}
+#4 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+#5 {
+  animation-delay: .1.33s;
+  -webkit-animation-delay: 1.33s;
+}
+#6 {
+  animation-delay: 1.66s;
+  -webkit-animation-delay: 1.66s;
+}
 @include media-query($md){
   .jumbotron-container {
     flex-direction: column;
