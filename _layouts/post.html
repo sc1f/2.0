@@ -1,15 +1,24 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div class="post container">
+  <div class="col-3">
+    <div class="post-information">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-created-for">Created for {{ page.for }}</p>
+      <p class="post-date">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        {{ page.date | date: "%b %-d, %Y" }}
+      </p>
+      <p class="post-tools">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        {{ page.tools }}
+      </p>
+      <hr>
+      <p class="post-description">{{ page.description }}</p>
+    </div>
+  </div>
+  <div class="col-9 post-content">
+      {{ content }}
+  </div>
 </div>
