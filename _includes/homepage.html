@@ -1,11 +1,10 @@
 <div class="jumbotron-container animated slideInLeft top">
-    <!-- for loop -->
-    <div class="jumbotron-item animated fadeIn" id='1'></div>
-    <div class="jumbotron-item animated fadeIn" id='2'></div>
-    <div class="jumbotron-item animated fadeIn" id='3'></div>
+    {% for post in site.posts limit:3 %}
+        <div class="jumbotron-item animated fadeIn" style="background-image: url('{{ post.thumbnail }}')"></div>
+    {% endfor %}
 </div>
 <div class="jumbotron-container animated slideInLeft bottom">
-    <div class="jumbotron-item animated fadeIn" id='4'></div>
-    <div class="jumbotron-item animated fadeIn" id='5'></div>
-    <div class="jumbotron-item animated fadeIn" id='6'></div>
+    {% for post in site.posts offset:3 limit:3 %}
+    <div class="jumbotron-item animated fadeIn" style="background-image: url('{{ post.thumbnail }}')"></div>
+    {% endfor %}
 </div>

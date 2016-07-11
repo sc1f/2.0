@@ -20,7 +20,7 @@
 
 .post-information {
   background: #fff;
-  position: fixed;
+  position: absolute;
   width: 15%;
 }
 
@@ -30,9 +30,61 @@
 }
 .post-title {
   font-style: italic;
-  margin-bottom: 0;
+  font-size: 4.5em;
 }
 
 .post-created-for {
   color: lighten($text-color, 30%);
+}
+
+// About Page
+
+.about-container {
+  margin-bottom: 2em;
+}
+
+.about-portrait-container {
+  float: left;
+}
+
+.about-txt-container {
+  float: right;
+  padding: 0 2em;
+}
+/* Responsive Design */
+
+@include media-query($lg){
+
+}
+
+@include media-query($md){
+
+}
+
+@include media-query($sm){
+  .post.container {
+
+    .col-3, .col-9 {
+      width: 100%;
+    }
+
+  }
+  .post-information {
+    padding: 0 3em;
+    position: relative;
+    width: 100%;
+  }
+
+  .about-portrait {
+    max-width: 100vw;
+    width: 100vw !important;
+  }
+  .about-txt {
+    padding: 2em;
+  }
+
+  .post-title {
+    font-size: 3em;
+    padding: 0 1em 0 1em;
+  }
 }

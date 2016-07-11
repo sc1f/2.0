@@ -33,11 +33,23 @@ var jumbotron = {
     }
 };
 
+var mobile_nav = {
+    init: function(e, i){
+        $(e).click(function(){
+            $(e).toggleClass('spin');
+            $(i).toggleClass('flex');
+        });
+        //slidedown
+    }
+}
+
 $(document).ready(function() {
     $('.nav').each(function(i) {
         $(this).delay((i++) * 50).fadeTo(500, 1);
     });
     jumbotron.init('.jumbotron-container', '.jumbotron-item');
+    mobile_nav.init('.nav-mobile-toggle', '.navbar-section.navigation.mobile');
+
 });
 
 /* TODO: cron jobs for compression of images, gzipping files for server, serverside maintenance */
