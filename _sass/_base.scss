@@ -37,6 +37,14 @@ img {
 .navbar {
   /*border-bottom: 4px solid $theme-color;*/
 }
+
+.nav-mobile-toggle {
+  display: none;
+}
+.navbar-section.mobile {
+  display: none;
+}
+
 a.navbar-brand {
   color: $theme-color;
   font-family: $heading-font;
@@ -71,17 +79,97 @@ a.navbar-brand {
   padding-top: 1em;
 }
 
+//animations
+.reverse {
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.spin {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 300ms;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 300ms;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(180deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(180deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(180deg);}
+}
 
 //responsive
 
 @include media-query($sm) {
   .navbar {
+    border-bottom: 1px solid $theme-grey;
     flex-direction: column;
+    padding: 2em;
+
+    .navbar-section.brand {
+      margin-bottom: 1em;
+    }
+
+  }
+  .navbar-section.navigation:not(.mobile){
+    display: none;
+  }
+
+  .flex {
+    display: flex !important;
+  }
+
+  .navbar-section.navigation.mobile {
+    display: none;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .nav-mobile-toggle {
+    color: $theme-color;
+    display: block;
+    font-size: 1.5em !important;
+
+    &:before {
+      content: "\f0c9";
+    }
+    &:active {
+      color: darken($theme-color, 10%);
+    }
+  }
+
+  div.jumbotron-container.top {
+    margin-top: 0;
+  }
+  
+  .navbar-section.mobile {
+    display: none;
   }
   .col-8 {
     width: 100%;
   }
   div.jumbotron-container {
-    padding: 0 1em;
+    padding: 0;
   }
 }

@@ -1,0 +1,38 @@
+---
+layout: category
+title: Photos
+---
+
+<div class="container">
+    {% for post in site.categories.photo limit:1 category:photo %}
+    <div class="featured-post-summary" style="background-image:url('{{ post.thumbnail }}')">
+        <a href="{{ post.url }}">
+            <div class="featured-post-summary-text">
+                <a href="{{ post.url }}">
+                    <h3 class="featured-post-title">{{ post.title }}</h3>
+                </a>
+                <p class="post-summary-description">{{ post.description }}</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+    {% for post in site.categories.photo offset:1 %}
+    <div class="post-summary">
+        <div class="post-thumbnail" style="background-image:url('{{ post.thumbnail }}')"></div>
+        <div class="post-summary-text">
+            <a href="{{ post.url }}">
+                <h3 class="post-summary-title">{{ post.title }}</h3>
+            </a>
+            <p class="post-summary-description">{{ post.description }}</p>
+            <p class="post-summary-date">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                {{ post.date | date: '%B %d, %Y'}}
+            </p>
+            <p class="post-summary-tools">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                {{ post.tools }}
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
