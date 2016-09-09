@@ -1,11 +1,11 @@
 //theme
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font;
+  font-family: $serif-font;
 }
 p, ul, li, a, span, pre {
   color: $text-color;
-  font-family: $body-font;
+  font-family: $sans-serif-font;
   line-height: $base-line-height;
 }
 
@@ -32,41 +32,6 @@ img {
 }
 //layout
 
-//navbar
-
-.navbar {
-  /*border-bottom: 4px solid $theme-color;*/
-}
-
-.nav-mobile-toggle {
-  display: none;
-}
-.navbar-section.mobile {
-  display: none;
-}
-
-a.navbar-brand {
-  color: $theme-color;
-  font-family: $heading-font;
-  font-size: 2.75em !important;
-  font-weight: 300;
-  text-align: left;
-  &:hover {
-    color: darken($theme-color, 10%);
-  }
-}
-.navbar-section > a.btn-link {
-  font-size: 1.25em;
-  line-height: 0;
-  &:hover {
-    color: lighten($text-color, 50%);
-  }
-}
-
-.nav {
-  display: none;
-}
-
 //footer
 
 .footer {
@@ -80,43 +45,27 @@ a.navbar-brand {
 }
 
 //animations
-.reverse {
-  -webkit-animation-direction: reverse;
-  -moz-animation-direction: reverse;
-  -o-animation-direction: reverse;
-  animation-direction: reverse;
+.typed-cursor{
+  color: #fff;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
-.spin {
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 300ms;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 300ms;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 300ms;
-  -ms-animation-iteration-count: 1;
-  -ms-animation-timing-function: linear;
-
-  animation-name: spin;
-  animation-duration: 300ms;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
-
-@-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(180deg); }
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
-@-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(180deg); }
-}
-@keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(180deg);}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 
 //responsive

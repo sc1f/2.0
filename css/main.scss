@@ -43,19 +43,9 @@ $theme-grey: #d8d8d8;
   font-weight: bold;
   font-style: italic;
 }
-@font-face {
-  font-family: DIN;
-  src: url('/assets/fonts/DIN/DINBek-Regular.ttf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: DIN;
-  src: url('/assets/fonts/DIN/DIN-RegularItalic.ttf');
-  font-weight: normal;
-  font-style: italic;
-}
-$heading-font: Sentinel;
-$body-font: DIN;
+
+$serif-font: Sentinel, Georgia, serif;
+$sans-serif-font: Lato, Roboto, Helvetica, Arial, sans-serif;
 $base-font-size: 1rem;
 $base-line-height: 1.4;
 
@@ -80,7 +70,7 @@ $sm: 425px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "navigation",
         "homepage",
-        "category",
         "post"
 ;
