@@ -1,0 +1,139 @@
+// post navigation
+
+.navbar {
+  -js-display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 100;
+}
+
+.navbar__section {
+  -js-display: flex;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+
+  &.navbar__section--brand {
+    a {
+    }
+  }
+}
+
+.navbar__item {
+  &.navbar__item--name {
+    color: #fff;
+    font-family: $serif-font;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $theme-color;
+    }
+  }
+}
+
+// homepage navigation
+
+.jumbotron {
+  background: linear-gradient(
+                  to left,
+                  rgba(0, 0, 0, 0),
+                  rgba(0, 0, 0, 0.75)
+  ),
+  url(https://sc1f.github.io/images/photo/DSCF3862.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.jumbotron__element {
+  -js-display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.jumbotron__element--wrapper {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 17% 10%;
+  }
+
+  &.jumbotron__element--bio {
+    align-items: flex-start;
+  }
+
+  &.jumbotron__element--social {
+    flex-direction: row;
+    margin-top: 1em;
+  }
+}
+
+.jumbotron__item {
+
+  color: #fff;
+
+  &.jumbotron__item--name {
+    font-size: 5em;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  &.jumbotron__item--biography {
+    font-size: 2.5em;
+    margin-top: .5em;
+  }
+  
+  &#jumbotron__item--biography--dynamic {
+    background-color: #cc5527;
+    color: #fff;
+    font-family: $serif-font;
+    padding: 1rem;
+  }
+  
+  &.jumbotron__item--biography--detail {
+    color: #fff;
+    font-size: 1.2em;
+    a {
+      color: #fff;
+      font-weight: bolder;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.jumbotron__item--social {
+    margin: 0 .5em;
+    font-weight: bolder;
+    text-decoration: none;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+    
+    &:hover {
+      color: darken(#fff, 25%);
+      text-decoration: underline;
+    }
+  }
+
+}

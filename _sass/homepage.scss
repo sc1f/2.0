@@ -38,7 +38,11 @@
     padding-top:100%;
   }
   &:hover {
-    opacity: .75;
+    opacity: .9;
+  }
+
+  &:active {
+    opacity: .9;
   }
 }
 

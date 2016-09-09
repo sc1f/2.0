@@ -18,38 +18,14 @@ var helpers = {
     }
 };
 
-var jumbotron = {
-    init : function(e, i) {
-        if (e) {
-            var delay = 0;
-            $(i).each(function(){
-                $(this).delay(delay).addClass('fadeIn');
-                delay+=50;
-            });
-            console.log(delay);
-        } else {
-            console.log('ya sure fucked up.');
-        }
-    }
-};
-
-var mobile_nav = {
-    init: function(e, i){
-        $(e).click(function(){
-            $(e).toggleClass('spin');
-            $(i).toggleClass('flex');
-        });
-        //slidedown
-    }
-}
 
 $(document).ready(function() {
-    $('.nav').each(function(i) {
-        $(this).delay((i++) * 50).fadeTo(500, 1);
+    console.log('Welcome to my portfolio site!\n\nIf you\'re reading this, you\'re probably interested in the technical details:\n \n* This site was built with Jekyll.');
+    $("#jumbotron__item--biography--dynamic").typed({
+        strings: ["design.", "code.", "communicate.", "photograph.", "build."],
+        typeSpeed: 10,
+        loop: true
     });
-    jumbotron.init('.jumbotron-container', '.jumbotron-item');
-    mobile_nav.init('.nav-mobile-toggle', '.navbar-section.navigation.mobile');
-
 });
 
 /* TODO: cron jobs for compression of images, gzipping files for server, serverside maintenance */
