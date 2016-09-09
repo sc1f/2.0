@@ -10,8 +10,11 @@ p, ul, li, a, span, pre {
 }
 
 a {
+  text-decoration: none;
+  text-decoration-color: $blue-color !important;
   &:hover {
     text-decoration: underline;
+    text-decoration-color: $blue-color;
   }
 }
 
@@ -25,10 +28,7 @@ img {
 }
 
 .btn {
-  color: $text-color !important;
-  &:hover {
-    color: lighten($text-color, 15%) !important;
-  }
+  font-family: $sans-serif-font;
 }
 //layout
 

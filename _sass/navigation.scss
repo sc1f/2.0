@@ -50,9 +50,6 @@
   url(https://sc1f.github.io/images/photo/DSCF3862.jpg);
   background-size: cover;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 0;
 }
@@ -108,7 +105,7 @@
     font-size: 1.2em;
     a {
       color: #fff;
-      font-weight: bolder;
+      font-weight: bold;
       text-decoration: none;
 
       &:hover {
@@ -119,7 +116,7 @@
 
   &.jumbotron__item--social {
     margin: 0 .5em;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
 
     &:first-of-type {
