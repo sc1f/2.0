@@ -1,3 +1,73 @@
-<div class="homepage">
-    <div class="homepage__element"></div>
+<div class="homepage columns">
+    <div class="homepage__element homepage__element--latest col-4 column">
+        <h3 class="homepage__item homepage__item--heading latest">Latest Works</h3>
+        <div class="homepage__item homepage__item--list">
+            {% for post in site.posts limit: 4 %}
+            <div class="homepage__item homepage__item--detail">
+                <a href="{{ post.url }}" class="homepage__brick homepage__brick--name">
+                    <img src="{{ post.thumbnail }}" alt="" class="homepage__brick homepage__brick--image responsive-img">
+                </a>
+            </div>
+            {% endfor %}
+            <button class="btn homepage__item homepage__item--action all">See All</button>
+        </div>
+    </div>
+    <div class="homepage__element homepage__element--wrapper">
+        <div class="homepage__element homepage__element--design col-12">
+            <div class="homepage__item homepage__item--wrapper">
+                <h3 class="homepage__item homepage__item--heading">Design</h3>
+                <button class="btn homepage__item homepage__item--action design">See More</button>
+            </div>
+            {% for post in site.categories.photo limit: 1 %}
+            <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});">
+                <div class="homepage__item homepage__item--focus--content">
+                    <h3 class="homepage__brick homepage__brick--name">{{ post.title }}</h3>
+                    <p class="homepage__brick homepage__brick--detail">Created for {{ post.for }}</p>
+                    <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="homepage__item homepage__item--list design">
+                {% for post in site.categories.photo limit: 3 %}
+                    <div class="homepage__item homepage__item--detail big">
+                        <div class="circle">
+                            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img">
+                        </div>
+                        <div class="homepage__brick homepage__brick--wrapper">
+                            <a href="{{ post.url }}">
+                                <h3 class="homepage__brick homepage__brick--name">{{ post.title | truncatewords: 5}}</h3>
+                            </a>
+                            <p class="homepage__brick homepage__brick--detail">Created for {{ post.for }}</p>
+                            <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="homepage__element homepage__element--code col-12">
+            <div class="homepage__item homepage__item--wrapper">
+                <h3 class="homepage__item homepage__item--heading">Code</h3>
+                <button class="btn homepage__item homepage__item--action">See More</button>
+            </div>
+            <div class="homepage__item homepage__item--grid">
+                <div class="homepage__item homepage__item--detail">
+
+                </div>
+            </div>
+        </div>
+        <div class="homepage__element homepage__element--photo col-12">
+            <div class="homepage__item homepage__item--wrapper">
+                <h3 class="homepage__item homepage__item--heading">Photography</h3>
+                <button class="btn homepage__item homepage__item--action">See More</button>
+            </div>
+            <div class="homepage__item homepage__item--grid">
+                <div class=" homepage__item homepage__item--detail">
+
+                </div>
+            </div>
+        </div>
+        <div class="homepage__element homepage__element--about col-12">
+            <h3 class="homepage__item homepage__item--heading">About Me</h3>
+        </div>
+    </div>
 </div>
