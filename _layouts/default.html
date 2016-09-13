@@ -7,16 +7,18 @@
   {% include header.html %}
     <div class="container">
         <div class="columns">
-            <div class="col-1"></div>
-            <div class="col-10">
+            <div class="col-1 column"></div>
+            <div class="col-10 main column">
 
 
                 {{ content }}
 
-                <!--  {% include footer.html %}-->
+                <button class="btn" id="to-top">Back to Top</button>
+
             </div>
-            <div class="col-1"></div>
+            <div class="col-1 column"></div>
         </div>
+        {% include footer.html %}
     </div>
     <script src="/js/jquery-3.0.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexibility/2.0.1/flexibility.js"></script>

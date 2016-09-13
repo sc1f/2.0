@@ -1,0 +1,18 @@
+---
+layout: post
+title: TimeUp!
+for: personal portfolio
+description: Create a simple, beautiful mobile timer orientated towards the debate community
+date: 2015-06-01
+tools: Adobe Illustrator, Photoshop
+category: design
+thumbnail: /images/design/t1.png
+---
+_Personal Project: Create a simple, beautiful mobile timer orientated towards the debate community, with features to suit._
+
+
+![screen1]({{ site.baseurl }}/images/design/t1.png)
+![screen2]({{ site.baseurl }}/images/design/t2.png)
+![screen3]({{ site.baseurl }}/images/design/t3.png)
+![screen4]({{ site.baseurl }}/images/design/t4.png)
+![screen5]({{ site.baseurl }}/images/design/t5.png)

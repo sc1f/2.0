@@ -1,0 +1,16 @@
+---
+layout: post
+
+title: UT-Austin Student Government Election Explorer
+for: The Daily Texan
+description: Developed the 2016 UTSG Election Explorer for The Daily Texan
+date: 2016-03-05
+tools: Flask (Python), AngularJS
+category: code
+thumbnail: /images/code/sg.png
+---
+Created for the Daily Texan to inform voters in the 2016 university-wide elections.
+
+<iframe src="http://dailytexanonline.com/features/sg2016" height="600px" width="100%"></iframe>
+
+**[Github Repository](https://github.com/sc1f/sg-expl)**

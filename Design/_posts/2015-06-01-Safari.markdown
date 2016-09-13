@@ -1,0 +1,21 @@
+---
+layout: post
+title: Safari Yearbook 2015
+for: Alief Kerr High School
+description: Served as editor-in-chief for the award-winning 2015 Safari Yearbook
+date: 2015-06-01
+tools: Adobe InDesign, Illustrator, Photoshop
+category: design
+thumbnail: /images/design/cover.jpg
+---
+_As the Editor-in-Chief, I had a principal role in deciding the visual language and creative direction of the 2015 yearbook. As a staff, we chose "Decode" as a theme in order to portray the idea of one's high school experience as an evolving enigma, revealed over time. Though I was solely responsible for the page designs displayed here, the book is a culmination of effort by myself and the staff members._<br><br>
+
+![screen1]({{ site.baseurl }}/images/design/cover.jpg)
+![screen2]({{ site.baseurl }}/images/design/1.jpg)
+![screen3]({{ site.baseurl }}/images/design/2.jpg)
+![screen4]({{ site.baseurl }}/images/design/3.jpg)
+![screen5]({{ site.baseurl }}/images/design/4.jpg)
+![screen6]({{ site.baseurl }}/images/design/5.jpg)
+![screen7]({{ site.baseurl }}/images/design/6.jpg)
+![screen8]({{ site.baseurl }}/images/design/7.jpg)
+![screen9]({{ site.baseurl }}/images/design/8.jpg)

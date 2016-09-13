@@ -1,0 +1,12 @@
+---
+layout: post
+title: 50 Years Later
+for: The Daily Texan
+description: Online feature for the 50th anniversary of the UT-Austin tower shootings. 
+date: 2016-08-01
+tools: Jekyll
+category: code
+thumbnail: /images/code/tower.png
+external_url: http://www.dailytexanonline.com/features/tower
+---
+<iframe src="http://www.dailytexanonline.com/features/tower" height="600px" width="100%"></iframe>

@@ -1,0 +1,15 @@
+---
+layout: post
+title: HD49 - Where They Stand
+for: The Daily Texan
+description: Explaining the policies and platforms of the seven candidates running to represent State House District 49
+date: 2016-02-28
+tools: Flask (Python)
+category: code
+thumbnail: /images/code/hd49.png
+---
+Created for the Daily Texan to explain the policies and platforms of the seven candidates running to represent State House District 49.
+
+<iframe src="http://dailytexanonline.com/features/hd49" height="600px" width="100%"></iframe>
+
+**[Github Repository](https://github.com/sc1f/hd49-expl)**

@@ -9,14 +9,29 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  margin: 1.5em 0 1em 0;
+  margin: .5em 0 1em 0;
   padding: 0 0 0 2rem;
 
+  @include media-query($sm) {
+    padding: 0 3rem;
+    margin: 0;
+  }
+
+  &:first-of-type {
+    margin-top: 1.5em;
+  }
+
   &.col-4 {
+    border-bottom: 0;
     margin: 0;
     position: relative;
     height: 30%;
     max-height: 100%;
+  }
+
+  &.homepage__element--about {
+    border-bottom: 0;
+    align-items: flex-start;
   }
 
   &.homepage__element--wrapper {
@@ -42,6 +57,14 @@
     align-items: center;
     margin-bottom: 1em;
     width: 100%;
+
+    &:first-of-type {
+      @include media-query($sm) {
+        border-top: 1px solid $theme-grey;
+        padding-top: 1em;
+      }
+    }
+
   }
 
   &.homepage__item--list {
@@ -66,7 +89,11 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin: 1rem 2rem .25rem 0;
+    margin: 1rem 2rem 0 0;
+
+    @include media-query($sm) {
+      margin: 1rem 0;
+    }
 
     &:last-of-type {
       margin-bottom: 0;
@@ -74,20 +101,12 @@
 
     &.big {
       background: #fff;
-      border-top: 1px solid lightgray;
+      border-top: 1px solid $theme-grey;
       flex-direction: row;
       align-items: flex-start;
       justify-content: flex-start;
       align-content: flex-start;
       padding: 2rem 0;
-
-      .circle {
-        border-radius: 50%;
-        overflow: hidden;
-        height: 30%;
-        margin-right: 2em;
-        width: 30%;
-      }
 
       &:last-of-type {
         margin-bottom: 2rem;
@@ -99,14 +118,17 @@
     align-self: flex-start;
     -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
     height: 60vh;
-    margin-bottom: 1.5em;
+    max-height: 60vh;
+    margin-bottom: 1em;
     padding: 0;
     width: 100%;
   }
 
   &.homepage__item--focus--content {
-    background: rgba(0,0,0,.25);
+    background: rgba(0,0,0,.5);
     -js-display: flex;
     display: flex;
     flex-direction: column;
@@ -119,9 +141,11 @@
       color: #fff;
       font-size: 2.5em;
       text-align: center;
+      text-decoration-color: #fff !important;
 
       &:hover {
         color: #fff;
+
       }
     }
 
@@ -129,6 +153,10 @@
       color: #fff;
       font-size: 1.25em;
       margin-bottom: .5em;
+
+      @include media-query($sm) {
+        text-align: center;
+      }
     }
   }
 
@@ -141,6 +169,11 @@
 
     &.all {
       margin-right: 2rem;
+      margin-bottom: 2rem;
+
+      @include media-query($sm) {
+        margin: 0 0 0 0;
+      }
     }
 
     &:hover {
@@ -149,11 +182,16 @@
     }
 
   }
+
+  &.homepage__item--biography {
+    margin: 1em 0;
+  }
   // typography
 
   &.homepage__item--heading {
     color: #cc5527;
     align-self: flex-start;
+    font-weight: bold;
     margin: 0;
 
     &.latest {
@@ -168,19 +206,22 @@
 
   &.homepage__brick--image {
     @include box_shadow(2);
-    margin-bottom: .5em;
 
-    &:hover {
-      @include box_shadow(3);
+    &.latest {
+      &:hover {
+        @include box_shadow(3);
+      }
     }
-
     &.small {
-      height: 50%;
+      margin-right: 2em;
+      width: 30%;
       @include box_shadow(1);
 
-      &:hover {
-        @include box_shadow(2);
-      }
+    }
+
+    &.headshot {
+      border-radius: 50%;
+      height: 30%;
     }
   }
 
@@ -203,6 +244,13 @@
       color: darken($blue-color, 10%);
       text-decoration: underline;
     }
+
+    &.nohover {
+      &:hover {
+        color: $blue-color;
+        text-decoration: none;
+      }
+    }
   }
 
   &.homepage__brick--detail {
@@ -210,5 +258,31 @@
     color: $text-color;
     text-decoration: none !important;
     font-style: italic;
+
+    a {
+      font-weight: bold;
+      &:hover {
+        color: $blue-color;
+      }
+    }
+
+    &.biography {
+      font-style: normal;
+    }
+
+    &.resume {
+      font-size: 1.75rem;
+    }
+
+    &.date-big {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2rem;
+      font-family: $serif-font;
+    }
+  }
+
+  &.homepage__brick--list {
+    margin: 0 0 1.25em 0;
   }
 }

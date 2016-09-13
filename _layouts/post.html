@@ -1,24 +1,37 @@
----
-layout: default
----
-<div class="post container">
-    <h1 class="post-title">{{ page.title }}</h1>
-  <div class="col-3">
-    <div class="post-information">
-      <p class="post-created-for">Created for {{ page.for }}</p>
-      <p class="post-date">
-        <i class="fa fa-calendar" aria-hidden="true"></i>
-        {{ page.date | date: "%b %-d, %Y" }}
-      </p>
-      <p class="post-tools">
-        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-        {{ page.tools }}
-      </p>
-      <hr>
-      <p class="post-description">{{ page.description }}</p>
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+{% include post_header.html %}
+<div class="container">
+    <div class="columns">
+        <div class="col-2 column"></div>
+        <div class="col-8 column main__post">
+            <div class="post__element post__element--header">
+                <h1 class="post__item post__item--title">{{ page.title }}</h1>
+                <p class="post__item post__item--detail produced_for">Produced for {{ page.for }}</p>
+                <p class="post__item post__item--detail date">Tools: {{ page.tools }}</p>
+                <p class="post__item post__item--detail date">Last Updated: {{ page.date | date: "%B %Y" }}</p>
+            </div>
+            <div class="post">
+                {{ content }}
+            </div>
+
+
+            <button class="btn" id="to-top">Back to Top</button>
+        </div>
+        <div class="col-2 column"></div>
     </div>
-  </div>
-  <div class="col-9 post-content">
-      {{ content }}
-  </div>
+    {% include footer.html %}
 </div>
+<script src="/js/jquery-3.0.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexibility/2.0.1/flexibility.js"></script>
+<script src="/js/blazy.min.js"></script>
+<script src="/js/typed.min.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>

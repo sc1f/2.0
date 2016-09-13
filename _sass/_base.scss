@@ -1,5 +1,10 @@
 //theme
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $serif-font;
 }
@@ -9,6 +14,10 @@ p, ul, li, a, span, pre {
   line-height: $base-line-height;
 }
 
+iframe {
+  border: 1px solid $theme-grey;
+  margin-bottom: 1em;
+}
 a {
   text-decoration: none;
   text-decoration-color: $blue-color !important;
@@ -32,17 +41,80 @@ img {
 }
 //layout
 
+.main, .main__post {
+  padding-bottom: 0;
+  @include media-query($sm){
+    width: 100%;
+  }
+}
+
+.container {
+  padding: 0;
+}
+
+.col-1 {
+  @include media-query($sm) {
+    display: none;
+  }
+}
 //footer
 
 .footer {
-  /*border-top: 4px solid $theme-color;*/
+  border-top: 1px solid $theme-grey;
   margin-bottom: 2em;
   .footer-links {
+    color: $blue-color;
     text-align: center;
     width: 100%;
   }
   padding-top: 1em;
 }
+
+.footer__element {
+  -js-display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__item {
+  color: $blue-color;
+  margin: 0 1em;
+
+  &:hover {
+    color: darken($blue-color, 10%);
+  }
+  
+  &.footer__item--copyright {
+    color: darken($theme-grey, 10%);
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1em;
+    width: 100%;
+  }
+}
+
+#to-top {
+  background:#fff;
+  border: 1px solid lightgray;
+  color: lightgray;
+  bottom: 1em;
+  right: 1em;
+  position: fixed;
+  height: auto;
+  font-weight: bold;
+
+  &:hover {
+    background: #fff;
+    color: darken(lightgray, 20%);
+  }
+
+  @include media-query($sm) {
+    display: none !important;
+  }
+
+}
+
 
 //animations
 .typed-cursor{
@@ -111,7 +183,7 @@ img {
   div.jumbotron-container.top {
     margin-top: 0;
   }
-  
+
   .navbar-section.mobile {
     display: none;
   }
