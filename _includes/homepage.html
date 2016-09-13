@@ -5,69 +5,137 @@
             {% for post in site.posts limit: 4 %}
             <div class="homepage__item homepage__item--detail">
                 <a href="{{ post.url }}" class="homepage__brick homepage__brick--name">
-                    <img src="{{ post.thumbnail }}" alt="" class="homepage__brick homepage__brick--image responsive-img">
+                    <img src="{{ post.thumbnail }}" alt="" class="homepage__brick homepage__brick--image latest responsive-img">
                 </a>
             </div>
             {% endfor %}
-            <button class="btn homepage__item homepage__item--action all">See All</button>
+            <a class="btn homepage__item homepage__item--action all" href="/post_list.html">See All</a>
         </div>
     </div>
     <div class="homepage__element homepage__element--wrapper">
-        <div class="homepage__element homepage__element--design col-12">
+        <div class="homepage__element homepage__element--design col-12  animated fadeIn wow">
             <div class="homepage__item homepage__item--wrapper">
                 <h3 class="homepage__item homepage__item--heading">Design</h3>
                 <button class="btn homepage__item homepage__item--action design">See More</button>
             </div>
-            {% for post in site.categories.photo limit: 1 %}
+            {% for post in site.categories.design limit: 1 %}
             <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});">
                 <div class="homepage__item homepage__item--focus--content">
-                    <h3 class="homepage__brick homepage__brick--name">{{ post.title }}</h3>
-                    <p class="homepage__brick homepage__brick--detail">Created for {{ post.for }}</p>
-                    <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
+                    {% if post.external_url %}
+                    <a href="post.external_url" target="_blank">
+                    {% else %}
+                    <a href="{{post.url}}">
+                    {% endif %}
+                        <h3 class="homepage__brick homepage__brick--name">{{ post.title }}</h3>
+                    </a>
+                    <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
+                    <p class="homepage__brick homepage__brick--detail date-big">{{ post.date | date: "%B %Y"}}</p>
                 </div>
             </div>
             {% endfor %}
             <div class="homepage__item homepage__item--list design">
-                {% for post in site.categories.photo limit: 3 %}
+                {% for post in site.categories.design offset: 1 %}
                     <div class="homepage__item homepage__item--detail big">
-                        <div class="circle">
                             <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img">
-                        </div>
                         <div class="homepage__brick homepage__brick--wrapper">
                             <a href="{{ post.url }}">
                                 <h3 class="homepage__brick homepage__brick--name">{{ post.title | truncatewords: 5}}</h3>
                             </a>
-                            <p class="homepage__brick homepage__brick--detail">Created for {{ post.for }}</p>
+                            <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
                             <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
                         </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
-        <div class="homepage__element homepage__element--code col-12">
+        <div class="homepage__element homepage__element--code col-12  animated fadeIn wow">
             <div class="homepage__item homepage__item--wrapper">
                 <h3 class="homepage__item homepage__item--heading">Code</h3>
-                <button class="btn homepage__item homepage__item--action">See More</button>
+                <button class="btn homepage__item homepage__item--action code">See More</button>
             </div>
-            <div class="homepage__item homepage__item--grid">
-                <div class="homepage__item homepage__item--detail">
-
+            {% for post in site.categories.code limit: 1 %}
+            <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});">
+                <div class="homepage__item homepage__item--focus--content">
+                    <a href="{{post.url}}">
+                        <h3 class="homepage__brick homepage__brick--name">{{ post.title }}</h3>
+                    </a>
+                    <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
+                    <p class="homepage__brick homepage__brick--detail date-big">{{ post.date | date: "%B %Y"}}</p>
                 </div>
             </div>
+            {% endfor %}
+            <div class="homepage__item homepage__item--list code">
+                {% for post in site.categories.code offset: 1 %}
+                <div class="homepage__item homepage__item--detail big">
+                    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img">
+                    <div class="homepage__brick homepage__brick--wrapper">
+                        {% if post.external_url %}
+                        <a href="post.external_url" target="_blank">
+                            {% else %}
+                            <a href="{{post.url}}">
+                                {% endif %}
+                            <h3 class="homepage__brick homepage__brick--name">{{ post.title | truncatewords: 5}}</h3>
+                        </a>
+                        <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
+                        <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-        <div class="homepage__element homepage__element--photo col-12">
+        <div class="homepage__element homepage__element--photo col-12  animated fadeIn wow">
             <div class="homepage__item homepage__item--wrapper">
                 <h3 class="homepage__item homepage__item--heading">Photography</h3>
-                <button class="btn homepage__item homepage__item--action">See More</button>
+                <button class="btn homepage__item homepage__item--action photo">See More</button>
             </div>
-            <div class="homepage__item homepage__item--grid">
-                <div class=" homepage__item homepage__item--detail">
-
+            {% for post in site.categories.photo limit: 1 %}
+            <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});">
+                <div class="homepage__item homepage__item--focus--content">
+                    <a href="{{post.url}}">
+                    <h3 class="homepage__brick homepage__brick--name">{{ post.title }}</h3>
+                    </a>
+                    <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
+                    <p class="homepage__brick homepage__brick--detail date-big">{{ post.date | date: "%B %Y"}}</p>
                 </div>
             </div>
+            {% endfor %}
+            <div class="homepage__item homepage__item--list photo">
+                {% for post in site.categories.photo offset: 1 %}
+                <div class="homepage__item homepage__item--detail big">
+                    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img">
+                    <div class="homepage__brick homepage__brick--wrapper">
+                        {% if post.external_url %}
+                        <a href="post.external_url" target="_blank">
+                            {% else %}
+                            <a href="{{post.url}}">
+                                {% endif %}
+                            <h3 class="homepage__brick homepage__brick--name">{{ post.title | truncatewords: 5}}</h3>
+                        </a>
+                        <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
+                        <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-        <div class="homepage__element homepage__element--about col-12">
+        <div class="homepage__element homepage__element--about col-12  animated fadeIn wow">
             <h3 class="homepage__item homepage__item--heading">About Me</h3>
+            <div class="homepage__item homepage__item--biography">
+                <img class="homepage__brick homepage__brick--image small headshot" src="/assets/img/jun_tan_profile.jpg" alt="Jun Tan">
+                <div class="homepage__brick homepage__brick--wrapper">
+                    <h3 class="homepage__brick homepage__brick--name nohover">I'm Jun Tan.</h3>
+                    <p class="homepage__brick homepage__brick--detail biography">I'm a developer, designer, photographer, and junkie for all things visual and political.</p>
+                    <p class="homepage__brick homepage__brick--detail biography">I'm a sophomore at the University of Texas at Austin, studying Plan II Honors and Government. I have extensive experience in visual design, front-end/back-end development, communications/PR, data journalism, photography, and digital content production.</p>
+                    <p class="homepage__brick homepage__brick--detail biography">Here are some of the hats I currently wear:</p>
+                    <ul class="homepage__brick homepage__brick--list">
+                        <li class="homepage__brick homepage__brick--detail biography">Communications Intern at UT-Austin Dell Medical School</li>
+                        <li class="homepage__brick homepage__brick--detail biography">Student Technology Assistant at UT-Austin LAITS</li>
+                        <li class="homepage__brick homepage__brick--detail biography">Technical Operations Manager at <a href="http://dailytexanonline.com/daily-texan-interactives" target="_blank" rel="nofollow noreferrer">The Daily Texan</a></li>
+                    </ul>
+                    <p class="homepage__brick homepage__brick--detail biography">I formerly worked as a digital producer at <a href="http://txdemocrats.org" target="_blank" rel="nofollow noreferrer">The Texas Democratic Party</a>, and twice as a public speaking instructor at Harvard Debate Council's summer workshops. Tabs > spaces.</p>
+                    <p class="homepage__brick homepage__brick--detail resume">Download my resume <a href="/assets/pdf/Junyuan_Tan.pdf">here</a>.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

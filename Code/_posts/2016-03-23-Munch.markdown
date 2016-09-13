@@ -1,0 +1,17 @@
+---
+layout: post
+
+title: Munch
+for: Design Hacks, a hackathon at UT-Austin
+description: A snacking assistant web app
+date: 2016-03-23
+tools: HTML/CSS/Skeleton/AngularJS
+category: code
+thumbnail: /images/code/6.gif
+---
+3rd Place winner @ Design Hacks 2016, developed + coded front-end as part of team of 4.
+
+**Live demo:**
+<iframe src="http://sc1f.github.io/munch/#/" height="600px" width="100%"></iframe>
+
+**[Github Repository](https://github.com/sc1f/munch)**

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+{% include post_header.html %}
+<div class="container">
+    <div class="columns">
+        <div class="col-1 column"></div>
+        <div class="col-10 main column">
+
+            {{ content }}
+
+            <button class="btn" id="to-top">Back to Top</button>
+        </div>
+        <div class="col-1 column"></div>
+    </div>
+    {% include footer.html %}
+</div>
+<script src="/js/jquery-3.0.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexibility/2.0.1/flexibility.js"></script>
+<script src="/js/blazy.min.js"></script>
+<script src="/js/typed.min.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -11,3 +11,4 @@ github_username:  sc1f
 
 # Build settings
 markdown: kramdown
+permalink: none

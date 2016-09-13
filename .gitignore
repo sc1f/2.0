@@ -1,4 +1,5 @@
 .DS_Store
+./*/.DS_Store
 # Created by https://www.gitignore.io/api/intellij
 
 ### Intellij ###
@@ -56,3 +57,4 @@ fabric.properties
 #jekyll
 _site
 .sass-cache
+.sass-cache/
