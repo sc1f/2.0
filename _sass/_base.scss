@@ -81,6 +81,10 @@ img {
   color: $blue-color;
   margin: 0 1em;
 
+  &:first-of-type {
+    margin-left: 0;
+  }
+
   &:hover {
     color: darken($blue-color, 10%);
   }
@@ -90,6 +94,7 @@ img {
     font-size: 1.25rem;
     text-align: center;
     margin-top: 1em;
+    margin-left: 0;
     width: 100%;
   }
 }
