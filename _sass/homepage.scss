@@ -13,6 +13,7 @@
   padding: 0 0 0 2rem;
 
   @include media-query($sm) {
+    border-top: 0;
     padding: 0 3rem;
     margin: 0;
   }
@@ -35,6 +36,12 @@
 
     @include media-query($md) {
       margin-top: 1em;
+    }
+  }
+
+  &.homepage__element--latest {
+    @include media-query($sm) {
+      border-bottom: 1px solid $theme-grey;
     }
   }
 
@@ -65,9 +72,12 @@
     @include media-query($md) {
       flex-direction: column;
     }
+
+    @include media-query($sm) {
+      border-top: 0;
+    }
     &:first-of-type {
       @include media-query($sm) {
-        border-top: 1px solid $theme-grey;
         padding-top: 1em;
       }
     }
@@ -173,6 +183,10 @@
     border-color: $blue-color;
     color: $blue-color;
     height: auto;
+
+    @include media-query($sm) {
+      margin-top: .5em;
+    }
 
     &.all {
       margin-right: 2rem;
