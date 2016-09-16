@@ -126,25 +126,27 @@ var homepageControl = {
 
 
 $(document).ready(function() {
-    //initialize lazy-loader
-    new Blazy({
-        selector: '.lazy, img'
-    });
-
+    var jumbo = "#jumbotron__item--biography--dynamic";
+    // init flexibility
+    flexibility(document.body);
     // init wow
     new WOW().init({
         mobile: false
     });
+    // dev info
     console.log('Welcome to my portfolio site!\n\nIf you\'re reading this, you\'re probably interested in the technical details:\n \n* This site was built with Jekyll.');
-    $("#jumbotron__item--biography--dynamic").typed({
-        strings: ["design.", "code.", "communicate.", "photograph.", "build.", "create."],
-        typeSpeed: 5,
-        loop: true
-    });
+    // homepage jumbotron typed
+    if (jumbo) {
+        $(jumbo).typed({
+            strings: ["design.", "code.", "communicate.", "photograph.", "build.", "create."],
+            typeSpeed: 1,
+            loop: true
+        });
+    }
+    // init controls
     homepageControl.init('.homepage__item--action.design', '.homepage__item--list.design');
     homepageControl.init('.homepage__item--action.code', '.homepage__item--list.code');
     homepageControl.init('.homepage__item--action.photo', '.homepage__item--list.photo');
     homepageControl.toTop('.jumbotron', '#to-top');
+    $('#slideshow').cycle();
 });
-
-/* TODO: cron jobs for compression of images, gzipping files for server, serverside maintenance */

@@ -1,0 +1,21 @@
+---
+layout: post
+
+title: A New History for a New Century
+for: The University of Texas at Austin
+description: Front-end development for a new learning management system for online classes at UT-Austin
+date: 2016-09-01
+tools: HTML/CSS/AngularJS, PHP/Laravel backend
+category: code
+thumbnail: /images/code/315k.png
+---
+Using mockups I made as part of LAITS, I coded the entire front-end (in AngularJS and Angular material) for the online learning management system, built multiple backend and integrated features, and continue to perform maintenance and build features for the platform to this day.
+
+The platform consists of a front-end assignment view as well as a fully interactive content management and editorial system that is flexible, scalable, and adaptable to the user's needs.
+
+![screen1]({{ site.baseurl }}/images/code/315k.png)
+![screen1]({{ site.baseurl }}/images/code/315k2.png)
+![screen1]({{ site.baseurl }}/images/code/315k3.png)
+![screen1]({{ site.baseurl }}/images/code/315k4.png)
+![screen1]({{ site.baseurl }}/images/code/315k5.png)
+![screen1]({{ site.baseurl }}/images/code/315k6.png)

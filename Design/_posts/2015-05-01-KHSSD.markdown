@@ -1,0 +1,16 @@
+---
+layout: post
+title: Kerr Speech & Debate Branding
+for: Kerr High School
+description: Branded merchandise and material for my high school speech and debate team
+date: 2015-05-01
+tools: Adobe Illustrator
+category: design
+thumbnail: /images/design/graphic.png
+---
+Create posters and a T-shirt design under a unified design language for the Kerr High School speech and debate team.
+
+![screen1]({{ site.baseurl }}/images/design/graphic.png)
+![screen2]({{ site.baseurl }}/images/design/jtang.png)
+![screen3]({{ site.baseurl }}/images/design/aathar.png)
+![screen4]({{ site.baseurl }}/images/design/shirt.jpg)

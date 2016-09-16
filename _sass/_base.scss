@@ -109,7 +109,7 @@ img {
     color: darken(lightgray, 20%);
   }
 
-  @include media-query($sm) {
+  @include media-query($md) {
     display: none !important;
   }
 

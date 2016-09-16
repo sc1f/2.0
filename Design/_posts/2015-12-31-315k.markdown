@@ -1,0 +1,16 @@
+---
+layout: post
+title: UT-Austin Online History
+for: UT-Austin LAITS
+description: Module front-end designs for online history classes
+date: 2015-12-31
+tools: Sketch, Adobe Illustrator
+category: design
+thumbnail: /images/design/appmockup.jpg
+---
+Designed more course management systems. 
+
+![screen1]({{ site.baseurl }}/images/design/appmockup.jpg)
+![screen2]({{ site.baseurl }}/images/design/module.jpg)
+![screen3]({{ site.baseurl }}/images/design/activity.jpg)
+![screen4]({{ site.baseurl }}/images/design/resources.jpg)
