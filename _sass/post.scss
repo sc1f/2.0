@@ -98,6 +98,13 @@ input#search {
   }
 }
 
+.main__post {
+  @include media-query($sm) {
+    padding: 0 2em;
+    width: 100%;
+  }
+}
+
 .post__element {
   &.post__element--header {
     border-bottom: 1px solid $theme-grey;
@@ -122,5 +129,12 @@ input#search {
     &.date {
       color: darken($theme-grey, 20%);
     }
+  }
+}
+
+
+div.col-2.column {
+  @include media-query($sm) {
+    display: none;
   }
 }

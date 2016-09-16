@@ -4,7 +4,7 @@ email: tanjunyuan@hotmail.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   Visual designer, web developer, photographer.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://juntan.me" # the base hostname & protocol for your site
+url: "http://juntan.me" # the base hostname & protocol for your site
 twitter_username: contextuallyjun
 instagram_username: contextuallyjun
 github_username:  sc1f
