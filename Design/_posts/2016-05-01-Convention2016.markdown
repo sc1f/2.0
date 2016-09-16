@@ -1,0 +1,24 @@
+---
+layout: post
+title: Texas Democratic Convention Branding
+for: the Texas Democratic Party
+description: Extended visual brand over multiple platforms and media
+date: 2016-06-23
+tools: Adobe Illustrator, InDesign, After Effects, Premiere, Photoshop
+category: design
+thumbnail: /images/design/tdp1.png
+---
+As a digital producer, I created a wealth of print, display, and online materials for use during the convention, including signage, maps, print graphics, and display boards.
+
+Display boards printed at extra-large scale:
+![screen1]({{ site.baseurl }}/images/design/tdp1.png)
+Convention room signage:
+![screen2]({{ site.baseurl }}/images/design/tdp2.png)
+Custom-designed maps of the Alamodome:
+![screen3]({{ site.baseurl }}/images/design/tdp3.png)
+![screen4]({{ site.baseurl }}/images/design/tdp4.png)
+Convention program pages:
+![screen5]({{ site.baseurl }}/images/design/tdp5.png)
+Remittance donation envelopes embedded within convention programs:
+![screen6]({{ site.baseurl }}/images/design/tdp6.png)
+![screen7]({{ site.baseurl }}/images/design/tdp7.png)

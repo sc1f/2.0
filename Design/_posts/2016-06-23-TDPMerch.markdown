@@ -1,0 +1,18 @@
+---
+layout: post
+title: Merchandise Designs
+for: the Texas Democratic Party
+description: Created stickers and other graphics for TDP merchandise
+date: 2016-06-24
+tools: Adobe Illustrator, Photoshop
+category: design
+thumbnail: /images/design/merch1.png
+---
+
+In my time at the TDP, I designed stickers, graphic designs, and badges to be sold in our online store and store booth at the Texas Democratic Convention.
+
+![screen1]({{ site.baseurl }}/images/design/merch1.png)
+![screen2]({{ site.baseurl }}/images/design/merch2.png)
+![screen3]({{ site.baseurl }}/images/design/merch3.png)
+![screen4]({{ site.baseurl }}/images/design/merch4.png)
+![screen5]({{ site.baseurl }}/images/design/badges.png)

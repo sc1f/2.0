@@ -7,7 +7,8 @@ description: A snacking assistant web app
 date: 2016-03-23
 tools: HTML/CSS/Skeleton/AngularJS
 category: code
-thumbnail: /images/code/6.gif
+thumbnail: /images/code/munch.png
+external_url: http://sc1f.github.io/munch/
 ---
 3rd Place winner @ Design Hacks 2016, developed + coded front-end as part of team of 4.
 

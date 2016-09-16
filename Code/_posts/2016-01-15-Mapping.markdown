@@ -1,0 +1,13 @@
+---
+layout: post
+
+title: Mapping Police Killings
+for: personal portfolio
+description: An experiment with D3.js and MapboxGL
+date: 2016-01-15
+tools: HTML/CSS/D3.js/MapboxGL
+category: code
+thumbnail: /images/code/maps.png
+external_url: http://sc1f.github.io/data-driver/
+---
+A personal project, created with data from <a href="https://github.com/fivethirtyeight/data/tree/master/police-killings">FiveThirtyEight</a>, and inspired by <a href="http://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database">The Guardian</a>.

@@ -8,8 +8,7 @@ tools: Adobe Illustrator, Photoshop
 category: design
 thumbnail: /images/design/t1.png
 ---
-_Personal Project: Create a simple, beautiful mobile timer orientated towards the debate community, with features to suit._
-
+A simple, beautiful mobile timer orientated towards the debate community, with features to suit.
 
 ![screen1]({{ site.baseurl }}/images/design/t1.png)
 ![screen2]({{ site.baseurl }}/images/design/t2.png)

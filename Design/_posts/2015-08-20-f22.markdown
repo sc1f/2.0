@@ -1,0 +1,16 @@
+---
+layout: post
+title: f22.cn
+for: personal portfolio
+description: Completed over a 13-hour flight from Beijing to Houston, with no internet.
+date: 2015-08-20
+tools: Adobe Illustrator
+category: design
+thumbnail: /images/design/m1.jpg
+---
+
+ Front-end design for a hypothetical e-commerce business specializing in photographic equipment in the Chinese market. Created over the span of a 13-hour flight from Beijing to Houston.
+
+![screen1]({{ site.baseurl }}/images/design/m1.jpg)
+![screen2]({{ site.baseurl }}/images/design/m2.jpg)
+![screen3]({{ site.baseurl }}/images/design/m3.png)

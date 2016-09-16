@@ -33,7 +33,7 @@ layout: postlist
                 {{ post.date | date: "%B %Y" }}
             </p>
             <p class="postlist__item postlist__item--detail">
-                {{ post.description | truncatewords: 8 }}
+                {{ post.description }}
             </p>
         </div>
     </div>
@@ -48,7 +48,8 @@ layout: postlist
                 "author": "{{ post.author | xml_escape }}",
                 "category": "{{ post.category | xml_escape }}",
                 "description": {{ post.description | strip_html | strip_newlines | jsonify }},
-        "url": "{{ post.url | xml_escape }}"
+        "url": "{{ post.url | xml_escape }}",
+                "external_url": "{{ post.url | xml_escape }}"
     }
     {% unless forloop.last %},{% endunless %}
     {% endfor %}
@@ -65,7 +66,12 @@ layout: postlist
 
                 for (var i = 0; i < results.length; i++) {  // Iterate over the results
                     var item = store[results[i].ref];
-                    appendString += '<li class="postsearch__item"><a href="' + item.url + '" class="postsearch__item postsearch__item--name"><h3>' + item.title + '</h3></a>';
+                    appendString += '<li class="postsearch__item">';
+                    if (item.external_url) {
+                        appendString += '<a href="' + item.external_url + '" class="postsearch__item postsearch__item--name"><h3>' + item.title + '</h3></a>';
+                    } else {
+                        appendString += '<a href="' + item.url + '" class="postsearch__item postsearch__item--name"><h3>' + item.title + '</h3></a>';
+                    }
                     appendString += '<p>' + item.description.substring(0, 150) + '</p></li>';
                 }
 
