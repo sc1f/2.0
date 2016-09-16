@@ -135,7 +135,7 @@ $(document).ready(function() {
         mobile: false
     });
     // dev info
-    console.log('Welcome to my portfolio site!\n\nIf you\'re reading this, you\'re probably interested in the technical details:\n \n* This site was built with Jekyll.\n* The server is configured to use SSL and HTTP2, with a certificate from Let\'s Encrypt.\n* Enjoy!);
+    console.log('Welcome to my portfolio site!\n\nIf you\'re reading this, you\'re probably interested in the technical details:\n \n* This site was built with Jekyll.\n* The server is configured to use SSL and HTTP2, with a certificate from Let\'s Encrypt.\n* Enjoy!');
     // homepage jumbotron typed
     if (jumbo) {
         $(jumbo).typed({
