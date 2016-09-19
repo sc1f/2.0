@@ -8,6 +8,7 @@ date: 2016-03-05
 tools: Flask (Python), AngularJS
 category: code
 thumbnail: /images/code/sg.png
+external_url: http://dailytexanonline.com/features/sg2016
 ---
 Created for the Daily Texan to inform voters in the 2016 university-wide elections.
 
