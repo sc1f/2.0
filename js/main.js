@@ -87,11 +87,14 @@ var helpers = {
 };
 
 var homepageControl = {
-    init: function(control, element) {
+    init: function(control, element, child) {
         $(element).hide();
         $(control).click(function() {
             var txt = $(element).is(':visible') ? 'See More' : 'See Less';
             $(control).text(txt);
+            $(element + ' > ' + child).find('img').each(function() {
+                $(this).attr("src", $(this).data("src"));
+            });
             $(element).slideToggle();
         });
     },
@@ -100,21 +103,21 @@ var homepageControl = {
             if($(jumbotron).visible(true)) {
                 $(trigger).css('display', 'none');
             }
-            $(document).scroll(function(){
+            helpers.debounce($(document).scroll(function(){
                 if ($(jumbotron).visible(true)) {
                     $(trigger).css('display', 'none');
                 } else {
                     $(trigger).css('display', 'initial');
                 }
-            });
+            }), 200, true);
         } else {
-            $(document).scroll(function(){
+            helpers.debounce($(document).scroll(function(){
                 if ($(window).scrollTop() == 0) {
                     $(trigger).css('display', 'none')
                 } else {
                     $(trigger).css('display', 'initial');
                 }
-            })
+            }), 200, true);
         }
 
         $(trigger).click(function() {
@@ -146,9 +149,9 @@ $(document).ready(function() {
         });
     }
     // init controls
-    homepageControl.init('.homepage__item--action.design', '.homepage__item--list.design');
-    homepageControl.init('.homepage__item--action.code', '.homepage__item--list.code');
-    homepageControl.init('.homepage__item--action.photo', '.homepage__item--list.photo');
+    homepageControl.init('.homepage__item--action.design', '.homepage__item--list.design', '.homepage__item--detail');
+    homepageControl.init('.homepage__item--action.code', '.homepage__item--list.code', '.homepage__item--detail');
+    homepageControl.init('.homepage__item--action.photo', '.homepage__item--list.photo', '.homepage__item--detail');
     homepageControl.toTop('.jumbotron', '#to-top');
 
 });

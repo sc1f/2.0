@@ -39,6 +39,7 @@
 
 .jumbotron {
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -51,7 +52,7 @@
     -webkit-background-size: cover;
     background-size: cover;
     top: 0;
-    animation: imageAnimation 25s linear infinite 0s;
+    //animation: imageAnimation 25s linear infinite 0s;
     z-index: 1000;
 
   }
@@ -106,13 +107,13 @@
   }
 }
 
-@keyframes imageAnimation {
+/* @keyframes imageAnimation {
   0% { opacity: 0; animation-timing-function: ease-in; }
   10% { opacity: 1; animation-timing-function: ease-out; }
   20% { opacity: 1 }
   25% { opacity: 0 }
   100% { opacity: 0 }
-}
+} */
 
 .jumbotron:after {
   position: absolute;
