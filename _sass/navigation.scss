@@ -56,7 +56,7 @@
     z-index: 1000;
 
     @include media-query($sm) {
-      background-position: 0;
+      background-position: 0 !important;
     }
 
   }
