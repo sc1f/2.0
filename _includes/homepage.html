@@ -47,9 +47,9 @@
                 {% for post in site.categories.design offset: 1 %}
                     <div class="homepage__item homepage__item--detail big">
                         {% if post.external_url %}
-                            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.external_url }}'">
+                            <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.external_url }}'">
                         {% else %}
-                            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.url }}'">
+                            <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.url }}'">
                         {% endif %}
                         <div class="homepage__brick homepage__brick--wrapper">
                             {% if post.external_url %}
@@ -95,9 +95,9 @@
                 {% for post in site.categories.code offset: 1 %}
                 <div class="homepage__item homepage__item--detail big">
                     {% if post.external_url %}
-                    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.external_url }}'">
+                    <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.external_url }}'">
                     {% else %}
-                    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.url }}'">
+                    <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.url }}'">
                     {% endif %}
                     <div class="homepage__brick homepage__brick--wrapper">
                         {% if post.external_url %}
@@ -143,9 +143,9 @@
                 {% for post in site.categories.photo offset: 1 %}
                 <div class="homepage__item homepage__item--detail big">
                     {% if post.external_url %}
-                    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.external_url }}'">
+                    <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.external_url }}'">
                     {% else %}
-                    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.url }}'">
+                    <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.url }}'">
                     {% endif %}
                     <div class="homepage__brick homepage__brick--wrapper">
                         {% if post.external_url %}
