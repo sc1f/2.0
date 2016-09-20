@@ -55,6 +55,10 @@
     //animation: imageAnimation 25s linear infinite 0s;
     z-index: 1000;
 
+    @include media-query($sm) {
+      background-position: 0;
+    }
+
   }
 
   div:nth-child(1) {
