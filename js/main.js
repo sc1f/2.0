@@ -126,6 +126,7 @@ var homepageControl = {
 
 
 $(document).ready(function() {
+    $('#slideshow').cycle();
     $('.jumbotron__element--wrapper').css('display', 'flex');
     var jumbo = "#jumbotron__item--biography--dynamic";
     // init flexibility
@@ -149,5 +150,5 @@ $(document).ready(function() {
     homepageControl.init('.homepage__item--action.code', '.homepage__item--list.code');
     homepageControl.init('.homepage__item--action.photo', '.homepage__item--list.photo');
     homepageControl.toTop('.jumbotron', '#to-top');
-    $('#slideshow').cycle();
+
 });

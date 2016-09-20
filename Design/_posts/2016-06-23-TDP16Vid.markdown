@@ -2,7 +2,7 @@
 layout: post
 title: Video Production
 for: the Texas Democratic Party
-description: Created the post-convention video for #TDP16
+description: Created the post-convention video for the 2016 Texas Democratic Convention
 date: 2016-06-25
 tools: Adobe After Effects, Premiere Pro
 category: design
