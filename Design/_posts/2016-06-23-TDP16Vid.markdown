@@ -1,0 +1,15 @@
+---
+layout: post
+title: Video Production
+for: the Texas Democratic Party
+description: Created the post-convention video for #TDP16
+date: 2016-06-25
+tools: Adobe After Effects, Premiere Pro
+category: design
+thumbnail: /images/design/video.png
+---
+
+I produced the post-convention video for the 2016 Texas Democratic Convention, which got over 15,000 views on Facebook and over 900 engagements.
+
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTexasDemocraticParty%2Fvideos%2F10154333917199802%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
