@@ -129,7 +129,6 @@ var homepageControl = {
 
 
 $(document).ready(function() {
-    $('#slideshow').cycle();
     $('.jumbotron__element--wrapper').css('display', 'flex');
     var jumbo = "#jumbotron__item--biography--dynamic";
     // init flexibility
