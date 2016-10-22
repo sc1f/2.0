@@ -13,5 +13,13 @@ A simple, beautiful mobile timer orientated towards the debate community, with f
 ![screen1]({{ site.baseurl }}/images/design/t1.png)
 ![screen2]({{ site.baseurl }}/images/design/t2.png)
 ![screen3]({{ site.baseurl }}/images/design/t3.png)
+
+
+<div class="columns" markdown="1">
+<div class="column col-6" markdown="1"> 
 ![screen4]({{ site.baseurl }}/images/design/t4.png)
+</div>
+<div class="column col-6" markdown="1">
 ![screen5]({{ site.baseurl }}/images/design/t5.png)
+</div>
+</div>

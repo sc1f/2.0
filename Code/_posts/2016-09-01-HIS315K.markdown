@@ -17,5 +17,12 @@ The platform consists of a front-end assignment view as well as a fully interact
 ![screen1]({{ site.baseurl }}/images/code/315k2.png)
 ![screen1]({{ site.baseurl }}/images/code/315k3.png)
 ![screen1]({{ site.baseurl }}/images/code/315k4.png)
+
+<div class="columns" markdown="1">
+<div class="column col-6" markdown="1"> 
 ![screen1]({{ site.baseurl }}/images/code/315k5.png)
+</div>
+<div class="column col-6" markdown="1">
 ![screen1]({{ site.baseurl }}/images/code/315k6.png)
+</div>
+</div>

@@ -11,4 +11,8 @@ github_username:  sc1f
 
 # Build settings
 markdown: kramdown
+# Apply this change to _config.yml file
+kramdown:
+  # parse markdown inside block-level HTML tag
+  parse_block_html: true
 permalink: none
