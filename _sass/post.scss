@@ -95,6 +95,10 @@ input#search {
     color: $text-color;
     font-size: 1.6rem;
     line-height: 1.6;
+
+    @include media-query($sm) {
+      line-height: 1.2;
+    }
   }
 }
 
@@ -119,6 +123,11 @@ input#search {
     color: #cc5527;
     font-size: 5em;
     margin-bottom: .1em;
+
+    @include media-query($sm) {
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+    }
   }
   &.post__item--detail {
     &.produced_for {
@@ -137,4 +146,8 @@ div.col-2.column {
   @include media-query($sm) {
     display: none;
   }
+}
+
+.caption {
+  color: #808080
 }

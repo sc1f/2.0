@@ -5,8 +5,8 @@
             <a class="btn homepage__item homepage__item--action all" href="/post_list.html">See All</a>
         </div>
         <div class="homepage__item homepage__item--list">
-            {% for post in site.posts limit: 4 %}
-            <div class="homepage__item homepage__item--detail">
+            {% for post in site.posts limit: 6 %}
+            <div class="homepage__item homepage__item--detail latest">
                 {% if post.external_url %}
                 <a href="{{ post.external_url }}" target="_blank" class="homepage__brick homepage__brick--name">
                     {% else %}
@@ -178,7 +178,7 @@
                         <li class="homepage__brick homepage__brick--detail biography">Technical Operations Manager at <a href="http://dailytexanonline.com/daily-texan-interactives" target="_blank" rel="nofollow noreferrer">The Daily Texan</a></li>
                     </ul>
                     <p class="homepage__brick homepage__brick--detail biography">I formerly worked as a digital producer at <a href="http://txdemocrats.org" target="_blank" rel="nofollow noreferrer">The Texas Democratic Party</a>, and twice as a public speaking instructor at Harvard Debate Council's summer workshops.</p>
-                    <p class="homepage__brick homepage__brick--detail resume">Download my resume <a href="/assets/pdf/Junyuan_Tan.pdf">here</a>.</p>
+                    <p class="homepage__brick homepage__brick--detail resume">Download my resume <a href="/assets/pdf/Junyuan_Tan.pdf" style="font-weight: bold;">here</a>.</p>
                 </div>
             </div>
         </div>

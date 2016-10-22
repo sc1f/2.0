@@ -1,5 +1,6 @@
-.homepage {
-
+.container.homepage {
+  position: absolute;
+  top: 100vh;
 }
 .homepage__element {
   border-bottom: 1px solid $theme-grey;
@@ -164,6 +165,11 @@
         color: #fff;
 
       }
+
+      @media (min-width: 1441px) {
+        font-size: 6em;
+      }
+
     }
 
     .homepage__brick--detail {
@@ -174,6 +180,11 @@
       @include media-query($md) {
         text-align: center;
       }
+
+      @media (min-width: 1441px) {
+        font-size: 2em;
+      }
+
     }
   }
 
@@ -224,6 +235,11 @@
       font-style: italic;
       margin: .5em 0 .35em 0;
     }
+
+    @media (min-width: 1441px) {
+      font-size: 4em;
+    }
+
   }
 }
 
@@ -308,6 +324,11 @@
       font-weight: bold;
       font-size: 2rem;
       font-family: $serif-font;
+
+      @media (min-width: 1441px) {
+        font-size: 2em;
+      }
+
     }
   }
 
