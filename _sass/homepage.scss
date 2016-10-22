@@ -129,6 +129,10 @@
       &:last-of-type {
         margin-bottom: 2rem;
       }
+
+      @include media-query($sm) {
+        flex-direction: column-reverse;
+      }
     }
   }
 
@@ -260,6 +264,11 @@
 
       &:hover {
         @include box_shadow(2);
+      }
+
+      @include media-query($sm) {
+        width: 100%;
+        margin: .5em 0 .5em 0;
       }
 
     }
