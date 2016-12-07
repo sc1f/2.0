@@ -77,6 +77,11 @@
       overflow: hidden;
 
       img {
+        height: 100vh;
+        width: auto;
+        @media (min-width: 1441px) {
+          width: 100%;
+        }
         @include media-query($md) {
           height: 100vh;
           width: auto;
@@ -127,7 +132,7 @@
     margin-bottom: 0;
 
     @media (min-width: 1441px) {
-      font-size: 10em;
+      font-size: 5em;
     }
 
   }
@@ -137,7 +142,7 @@
     margin-top: .5em;
 
     @media (min-width: 1441px) {
-      font-size: 5em;
+      font-size: 3em;
     }
   }
   
@@ -162,7 +167,7 @@
     }
 
     @media (min-width: 1441px) {
-      font-size: 3em;
+      font-size: 1.5em;
     }
 
   }

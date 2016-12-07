@@ -13,6 +13,8 @@ Using mockups I made as part of LAITS, I coded the entire front-end (in AngularJ
 
 The platform consists of a front-end assignment view as well as a fully interactive content management and editorial system that is flexible, scalable, and adaptable to the user's needs.
 
+This is an ongoing project - I am deeply involved in the development process on both the backend and frontend, and am currently scaling and developing the platform for extensive use cases.
+
 ![screen1]({{ site.baseurl }}/images/code/315k.png)
 ![screen1]({{ site.baseurl }}/images/code/315k2.png)
 ![screen1]({{ site.baseurl }}/images/code/315k3.png)
