@@ -171,7 +171,7 @@
       }
 
       @media (min-width: 1441px) {
-        font-size: 6em;
+        font-size: 4em;
       }
 
       @include media-query($sm) {
@@ -250,7 +250,7 @@
     }
 
     @media (min-width: 1441px) {
-      font-size: 4em;
+      font-size: 3em;
     }
 
   }
