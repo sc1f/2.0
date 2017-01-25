@@ -88,12 +88,14 @@ var helpers = {
 
 var homepageControl = {
     init: function(control, element, child) {
+        //hide all on load
         $(element).hide();
         $(control).click(function() {
+            // change text based on visibility
             var txt = $(element).is(':visible') ? 'See More' : 'See Less';
-            $(control).text(txt);
+            $(control).text(txt); // apply
             $(element + ' > ' + child).find('img').each(function() {
-                $(this).attr("src", $(this).data("src"));
+                $(this).attr("src", $(this).data("src")); // load images by placing 'data-src' into 'src'
             });
             $(element).slideToggle();
         });
@@ -151,6 +153,6 @@ $(document).ready(function() {
     homepageControl.init('.homepage__item--action.design', '.homepage__item--list.design', '.homepage__item--detail');
     homepageControl.init('.homepage__item--action.code', '.homepage__item--list.code', '.homepage__item--detail');
     homepageControl.init('.homepage__item--action.photo', '.homepage__item--list.photo', '.homepage__item--detail');
-    homepageControl.toTop('.jumbotron', '#to-top');
+    homepageControl.toTop('.jumbotron__element--name', '#to-top');
 
 });
