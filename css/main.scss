@@ -10,10 +10,42 @@ $text-color: #404040;
 $blue-color: #5580a0;
 $theme-grey: #d8d8d8;
 
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/book.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/light.otf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/semibold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/bookitalic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/lightitalic.otf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: Sentinel;
+  src: url('/assets/fonts/sentinel/semibolditalic.otf');
+  font-weight: bold;
+  font-style: italic;
+}
 
-
-$serif-font: Sentinel, Georgia, serif;
-$sans-serif-font: Lato, Roboto, Helvetica, Arial, sans-serif;
+$serif-font: "Lora", Georgia, serif;
+$sans-serif-font: "Nunito Sans", Lato, Roboto, Helvetica, Arial, sans-serif;
 $base-font-size: 1rem;
 $base-line-height: 1.4;
 
