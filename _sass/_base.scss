@@ -68,6 +68,9 @@ img {
     width: 100%;
   }
   padding-top: 1em;
+  @include media-query($sm) {
+    margin-top: 12em;
+  }
 }
 
 .footer__element {

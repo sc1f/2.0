@@ -1,6 +1,5 @@
-.container.homepage {
-  position: absolute;
-  top: 100vh;
+.main.column {
+  padding-top: 0;
 }
 .homepage__element {
   border-bottom: 1px solid $theme-grey;
@@ -259,24 +258,13 @@
 .homepage__brick {
 
   &.homepage__brick--image {
-    @include box_shadow(2);
 
-    &.latest {
-      &:hover {
-        @include box_shadow(3);
-      }
-    }
     &.small {
       margin-right: 2em;
       width: 30%;
-      @include box_shadow(1);
-
-      &:hover {
-        @include box_shadow(2);
-      }
 
       @include media-query($sm) {
-        width: 100%;
+        width: 30%;
         margin: .5em 0 .5em 0;
       }
 
@@ -287,6 +275,7 @@
       height: 30%;
 
       @include media-query($sm) {
+        height: 50%;
         width: 50%;
         margin-bottom: 1em;
       }
@@ -297,6 +286,10 @@
     -js-display: flex;
     display: flex;
     flex-direction: column;
+
+    @include media-query($md) {
+      padding-left: 1rem;
+    }
   }
   &.homepage__brick--name {
     color: $blue-color;
@@ -338,6 +331,11 @@
       font-style: normal;
     }
 
+    &.biography.listitem {
+      list-style-position: outside;
+      padding-left: 0;
+    }
+
     &.resume {
       font-size: 1.75rem;
     }
@@ -356,6 +354,6 @@
   }
 
   &.homepage__brick--list {
-    margin: 0 0 1.25em 0;
+    margin: 0 0 1.25em 1.5rem;
   }
 }

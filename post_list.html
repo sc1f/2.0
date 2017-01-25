@@ -74,7 +74,7 @@ layout: postlist
                     }
                     appendString += '<p>' + item.description.substring(0, 150) + '</p></li>';
                 }
-
+                appendString+="<h3>See All Projects</h3>";
                 searchResults.innerHTML = appendString;
             } else {
                 searchResults.innerHTML = '<li class="postsearch__item">No results found</li>';
