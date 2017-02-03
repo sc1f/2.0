@@ -6,7 +6,7 @@ for: personal portfolio
 description: Photographs from ACL
 date: 2015-10-05
 tools: Adobe Lightroom
-category: Photo
+category: photo
 thumbnail: /images/photo/DSCF3063.jpg
 ---
 

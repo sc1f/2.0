@@ -19,6 +19,7 @@ iframe {
   margin-bottom: 1em;
 }
 a {
+  color: $blue-color;
   text-decoration: none;
   text-decoration-color: $blue-color !important;
   &:hover {
@@ -111,6 +112,7 @@ img {
   position: fixed;
   height: auto;
   font-weight: bold;
+  text-transform: uppercase;
 
   &:hover {
     background: #fff;

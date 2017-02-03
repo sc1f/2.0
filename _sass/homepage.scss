@@ -158,6 +158,10 @@
     justify-content: center;
     width: 100%;
 
+    @include media-query($sm) {
+      padding: 1em;
+    }
+
     .homepage__brick--name {
       color: #fff;
       font-size: 2.5em;
@@ -237,7 +241,7 @@
   // typography
 
   &.homepage__item--heading {
-    color: #cc5527;
+    color: #BF633F;
     align-self: flex-start;
     font-weight: bold;
     margin: 0;

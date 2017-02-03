@@ -8,7 +8,7 @@ tools: Adobe Illustrator, Photoshop
 category: design
 thumbnail: /images/design/moya1.png
 ---
-Created mailers for Galena Park, TX residents to encourage them to re-elect their mayor, Esmeralda Moya and her picks for city government positions. She won re-election.
+Created mailers for Galena Park, TX residents to encourage them to re-elect their mayor, Esmeralda Moya and her picks for city government positions. She won re-election in May.
 
 ![screen1]({{ site.baseurl }}/images/design/moya1.png)
 ![screen2]({{ site.baseurl }}/images/design/moya2.png)

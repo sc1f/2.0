@@ -6,7 +6,7 @@ for: personal portfolio
 description: Photographs from around the world
 date: 2016-09-20
 tools: Adobe Lightroom
-category: Photo
+category: photo
 thumbnail: /images/photo/20160728-JYT_5060.jpg
 ---
 

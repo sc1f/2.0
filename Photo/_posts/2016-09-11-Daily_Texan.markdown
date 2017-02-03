@@ -6,7 +6,7 @@ for: The Daily Texan
 description: Photos I've taken for The Daily Texan, America's largest college newspaper.
 date: 2016-09-11
 tools: Adobe Lightroom
-category: Photo
+category: photo
 thumbnail: /images/photo/JYT_2189.jpg
 ---
 <div class="columns" markdown="1">

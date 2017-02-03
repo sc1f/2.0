@@ -11,11 +11,11 @@
 }
 
 .navbar-brand {
-  color: #cc5527;
+  color: #BF633F;
   font-family: $serif-font;
 
   &:hover {
-    color: darken(#cc5527, 10%);
+    color: darken(#BF633F, 10%);
   }
 }
 
@@ -39,6 +39,7 @@
 
 .jumbotron__overlay {
   background: linear-gradient(to left, rgba(0,0,0,.1), rgba(0,0,0,.8)), url('/images/jumbotron.png');
+  background-size: cover;
   height: 100vh;
   max-width: 100%;
   width: 100%;
@@ -144,10 +145,10 @@
   }
   
   &#jumbotron__item--biography--dynamic {
-    background-color: #cc5527;
+    background-color: #BF633F;
     color: #fff;
     font-family: $serif-font;
-    padding: 1rem;
+    padding: .5rem 1rem;
   }
   
   &.jumbotron__item--biography--detail {
