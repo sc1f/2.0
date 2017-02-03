@@ -6,7 +6,7 @@ for: the Texas Democratic Party
 description: Promotional photos from the 2016 Texas Democratic Convention
 date: 2016-06-23
 tools: Adobe Lightroom
-category: Photo
+category: photo
 thumbnail: /images/photo/20160617-JYT_3410.jpg
 ---
 

@@ -120,13 +120,14 @@ input#search {
 .post__item {
 
   &.post__item--title {
-    color: #cc5527;
+    color: #BF633F;
     font-size: 5em;
     margin-bottom: .1em;
 
     @include media-query($sm) {
       -ms-word-wrap: break-word;
       word-wrap: break-word;
+      font-size: 2em;
     }
   }
   &.post__item--detail {
@@ -150,4 +151,15 @@ div.col-2.column {
 
 .caption {
   color: #808080
+}
+
+.post {
+  p {
+    a {
+      color: $blue-color;
+    }
+    img {
+      @include box-shadow(2);
+    }
+  }
 }
