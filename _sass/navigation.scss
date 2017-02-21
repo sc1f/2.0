@@ -14,6 +14,12 @@
   color: #BF633F;
   font-family: $serif-font;
 
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+
   &:hover {
     color: darken(#BF633F, 10%);
   }
@@ -28,6 +34,12 @@
     border-color: $blue-color;
     color: #fff;
     font-family: $sans-serif-font;
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     &:hover {
       background: darken($blue-color, 20%);
       color: #fff;
@@ -113,6 +125,12 @@
   &.jumbotron__element--social {
     flex-direction: row;
     margin-top: 1em;
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     &:hover {
       cursor: pointer;
     }
@@ -159,6 +177,12 @@
       font-weight: bold;
       text-decoration: none;
 
+      -webkit-transition: all .4s;
+      -moz-transition: all .4s;
+      -ms-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s;
+
       &:hover {
         text-decoration: underline;
       }
@@ -182,6 +206,12 @@
     &:last-of-type {
       margin-right: 0;
     }
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     
     &:hover {
       color: darken(#fff, 25%);
