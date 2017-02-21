@@ -85,6 +85,12 @@ img {
   color: $blue-color;
   margin: 0 1em;
 
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+
   &:first-of-type {
     margin-left: 0;
   }
@@ -113,6 +119,12 @@ img {
   height: auto;
   font-weight: bold;
   text-transform: uppercase;
+
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
 
   &:hover {
     background: #fff;

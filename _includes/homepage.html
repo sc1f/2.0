@@ -74,10 +74,10 @@
             </div>
             {% for post in site.categories.code limit: 1 %}
             {% if post.external_url %}
-            <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});"  onclick="location.href='{{ post.external_url }}'">
-                {% else %}
+                <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});"  onclick="location.href='{{ post.external_url }}'">
+            {% else %}
                 <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});"  onclick="location.href='{{ post.url }}'">
-                    {% endif %}
+            {% endif %}
             <div class="homepage__item homepage__item--focus--content">
                     {% if post.external_url %}
                     <a href="{{ post.external_url }}" target="_blank">
@@ -170,7 +170,7 @@
                 <div class="homepage__brick homepage__brick--wrapper">
                     <h3 class="homepage__brick homepage__brick--name nohover">I'm Jun Tan.</h3>
                     <p class="homepage__brick homepage__brick--detail biography">I'm a developer, designer, photographer, and junkie for all things visual and political.</p>
-                    <p class="homepage__brick homepage__brick--detail biography">I'm a sophomore at the University of Texas at Austin, studying Plan II Honors and Government. I have extensive experience in visual design, front-end/back-end development, communications/PR, data journalism, photography, and digital content production.</p>
+                    <p class="homepage__brick homepage__brick--detail biography">I'm a sophomore at the University of Texas at Austin, studying Plan II Honors and Government. I have extensive experience in full-stack development, visual design, communications/PR, data journalism, photography, and digital content production.</p>
                     <p class="homepage__brick homepage__brick--detail biography">Here are some of the hats I currently wear:</p>
                     <ul class="homepage__brick homepage__brick--list">
                         <li class="homepage__brick homepage__brick--detail biography listitem">Incoming enterprise business solutions intern at <a href="http://textron.com" target="_blank" rel="nofollow noreferrer">Textron</a>, a Fortune 500 aerospace and defense conglomerate</li>
