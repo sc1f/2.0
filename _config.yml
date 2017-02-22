@@ -16,3 +16,7 @@ kramdown:
   # parse markdown inside block-level HTML tag
   parse_block_html: true
 permalink: none
+gems:
+    - octopress-autoprefixer
+sass:
+     style: compressed
