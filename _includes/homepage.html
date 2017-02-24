@@ -19,6 +19,54 @@
         </div>
     </div>
     <div class="homepage__element homepage__element--wrapper">
+            <div class="homepage__element homepage__element--code col-12  animated fadeIn wow">
+            <div class="homepage__item homepage__item--wrapper">
+                <h3 class="homepage__item homepage__item--heading">Code</h3>
+                <button class="btn homepage__item homepage__item--action code">See More</button>
+            </div>
+            {% for post in site.categories.code limit: 1 %}
+            {% if post.external_url %}
+                <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});"  onclick="location.href='{{ post.external_url }}'">
+            {% else %}
+                <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});"  onclick="location.href='{{ post.url }}'">
+            {% endif %}
+            <div class="homepage__item homepage__item--focus--content">
+                    {% if post.external_url %}
+                    <a href="{{ post.external_url }}" target="_blank">
+                        {% else %}
+                        <a href="{{post.url}}">
+                            {% endif %}
+                        <h3 class="homepage__brick homepage__brick--name">{{ post.title }}</h3>
+                    </a>
+                    <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
+                    <p class="homepage__brick homepage__brick--detail date-big">{{ post.date | date: "%B %Y"}}</p>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="homepage__item homepage__item--list code">
+                {% for post in site.categories.code offset: 1 %}
+                <div class="homepage__item homepage__item--detail big">
+                    {% if post.external_url %}
+                    <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.external_url }}'">
+                    {% else %}
+                    <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.url }}'">
+                    {% endif %}
+                    <div class="homepage__brick homepage__brick--wrapper">
+                        {% if post.external_url %}
+                        <a href="{{ post.external_url }}" target="_blank">
+                            {% else %}
+                            <a href="{{post.url}}">
+                                {% endif %}
+                            <h3 class="homepage__brick homepage__brick--name">{{ post.title | truncatewords: 5}}</h3>
+                        </a>
+                        <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
+                            <p class="homepage__brick homepage__brick--detail">{{ post.tools }}</p>
+                        <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
         <div class="homepage__element homepage__element--design col-12  animated fadeIn wow">
             <div class="homepage__item homepage__item--wrapper">
                 <h3 class="homepage__item homepage__item--heading">Design</h3>
@@ -64,54 +112,6 @@
                             <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
                         </div>
                     </div>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="homepage__element homepage__element--code col-12  animated fadeIn wow">
-            <div class="homepage__item homepage__item--wrapper">
-                <h3 class="homepage__item homepage__item--heading">Code</h3>
-                <button class="btn homepage__item homepage__item--action code">See More</button>
-            </div>
-            {% for post in site.categories.code limit: 1 %}
-            {% if post.external_url %}
-                <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});"  onclick="location.href='{{ post.external_url }}'">
-            {% else %}
-                <div class="homepage__item homepage__item--focus" style="background-image: url({{ post.thumbnail }});"  onclick="location.href='{{ post.url }}'">
-            {% endif %}
-            <div class="homepage__item homepage__item--focus--content">
-                    {% if post.external_url %}
-                    <a href="{{ post.external_url }}" target="_blank">
-                        {% else %}
-                        <a href="{{post.url}}">
-                            {% endif %}
-                        <h3 class="homepage__brick homepage__brick--name">{{ post.title }}</h3>
-                    </a>
-                    <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
-                    <p class="homepage__brick homepage__brick--detail date-big">{{ post.date | date: "%B %Y"}}</p>
-                </div>
-            </div>
-            {% endfor %}
-            <div class="homepage__item homepage__item--list code">
-                {% for post in site.categories.code offset: 1 %}
-                <div class="homepage__item homepage__item--detail big">
-                    {% if post.external_url %}
-                    <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.external_url }}'">
-                    {% else %}
-                    <img data-src="{{ post.thumbnail }}" alt="{{ post.title }}" class="homepage__brick homepage__brick--image small responsive-img"  onclick="location.href='{{ post.url }}'">
-                    {% endif %}
-                    <div class="homepage__brick homepage__brick--wrapper">
-                        {% if post.external_url %}
-                        <a href="{{ post.external_url }}" target="_blank">
-                            {% else %}
-                            <a href="{{post.url}}">
-                                {% endif %}
-                            <h3 class="homepage__brick homepage__brick--name">{{ post.title | truncatewords: 5}}</h3>
-                        </a>
-                        <p class="homepage__brick homepage__brick--detail">{{ post.description | truncatewords: 8}}</p>
-                            <p class="homepage__brick homepage__brick--detail">{{ post.tools }}</p>
-                        <p class="homepage__brick homepage__brick--detail date">{{ post.date | date: "%B %Y"}}</p>
-                    </div>
-                </div>
                 {% endfor %}
             </div>
         </div>
